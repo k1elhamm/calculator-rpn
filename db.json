@@ -1,0 +1,45 @@
+{
+  "stack": [
+    {
+      "id": "stack1",
+      "operands": [
+        1,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "stack2",
+      "operands": [
+        4,
+        12,
+        10
+      ]
+    },
+    {
+      "id": "stack3",
+      "operands": [
+        1,
+        2,
+        11
+      ]
+    },
+    {
+      "operands": [
+        1
+      ],
+      "id": "xOnhD0c"
+    }
+  ],
+  "op": {
+    "operators": [
+      "ADD",
+      "SUB",
+      "MUL",
+      "DIV",
+      "NEG",
+      "DEL",
+      "SWAP"
+    ]
+  }
+}

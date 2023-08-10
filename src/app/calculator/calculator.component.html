@@ -1,0 +1,25 @@
+
+<h2>Stack List</h2> 
+
+<button (click)="currentStack = null">Add a new stack</button>
+
+<div *ngIf="stacks.length" class="" >
+  <div *ngFor="let stack of stacks;trackBy:getStackId">
+    <span> {{stack.id}}</span> 
+    <button (click)="onDisplayClick(stack.id!)">display</button>
+    <button (click)="onDeleteClick(stack.id!)">delete</button>
+  </div>
+</div>
+
+
+<div class="calculator">
+  <div class="stack">
+    <app-stack *ngIf="currentStack" [stack]="currentStack"/>
+    <input type="number" [(ngModel)]="inputValue"/> 
+    <button (click)="onAddOperand()">enter</button>
+  </div>
+  <div class="operators" *ngIf="currentStack" >
+    <app-operators [operators]="(operators$ | async)!" (operatorClick)="onOperatorClick($event)"/>
+  </div>
+  </div>
+  

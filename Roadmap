@@ -1,0 +1,2 @@
+Il s'agit des calculs simples que l'on peut faire côté front, cela peut considérablement améliorer les performances en réduisant les appels réseau, 
+accélérant les réponses et simplifiant la gestion des erreurs. On peut également utliser la calculatrice hors ligne.
