@@ -1,27 +1,57 @@
-# Calculator
+# Projet Angular - Calculatrice RPN
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+Ce projet est une calculatrice en notation polonaise inversée (RPN) développée en utilisant le framework Angular 16. Il vous permet d'effectuer des opérations arithmétiques simples en plaçant les opérandes dans une pile et en appliquant les opérations sur ceux-ci ( tous les calculs sont fait coté serveur ).
 
-## Development server
+## Prérequis
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Avant de pouvoir exécuter ce projet, assurez-vous d'avoir Node.js et Angular CLI installés sur votre machine. Vous aurez également besoin de `json-server` pour exécuter le serveur mock.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clonez ce référentiel sur votre machine locale en utilisant la commande suivante :
+   
+   ```
+   git clone https://github.com/k1elhamm/calculator-rpn.git
+   ```
 
-## Build
+2. Accédez au répertoire du projet :
+   
+   ```
+   cd calculator
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Installez les dépendances du projet en exécutant la commande :
+   
+   ```
+   npm install
+   ```
 
-## Running unit tests
+4. Installez le serveur mock `json-server` :
+   
+   ```
+   npm install -g json-server
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Lancer le Serveur Mock
 
-## Running end-to-end tests
+Pour exécuter le serveur mock, assurez-vous d'être dans le répertoire du projet, puis exécutez la commande suivante :
+   
+   ```
+   json-server --watch db.json
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Le serveur mock sera lancé et écoutera les appels API simulés à partir du fichier `db.json`.
 
-## Further help
+## Lancer le Projet Front
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pour lancer l'application Angular, assurez-vous d'être dans le répertoire du projet, puis exécutez la commande suivante :
+   
+   ```
+   ng serve
+   ```
+
+Ouvrez votre navigateur et accédez à `http://localhost:4200/` pour voir et interagir avec la calculatrice RPN.
+
+## Conclusion
+
+Félicitations ! Vous avez réussi à installer et exécuter le projet Angular de la calculatrice RPN.
